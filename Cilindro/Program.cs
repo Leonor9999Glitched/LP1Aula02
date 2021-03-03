@@ -9,7 +9,6 @@ namespace Cilindro
             //Variaveis
             string heightStr, radiusStr;
             float height, radius;
-            float pi = 3.1415926f;
             float vol, supArea;
 
             //Pedir a altura
@@ -25,10 +24,10 @@ namespace Cilindro
             radius = float.Parse(radiusStr);
 
             //Calcular o volume
-            vol = pi * radius * radius * height;
+            vol = (float)Math.PI * radius * radius * height;
 
             //Calculr a area superficial
-            supArea = 2 * pi * radius * (radius * height);
+            supArea = 2 * (float)Math.PI * radius * (radius * height);
 
             //Mostra o volume
             Console.Write($"Volume is {vol}.");
