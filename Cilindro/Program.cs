@@ -24,7 +24,7 @@ namespace Cilindro
             radius = float.Parse(radiusStr);
 
             //Calcular o volume
-            vol = (float)Math.PI * radius * radius * height;
+            vol = (float)Math.PI * (float)Math.Pow(radius, 2) * height;
 
             //Calculr a area superficial
             supArea = 2 * (float)Math.PI * radius * (radius * height);
